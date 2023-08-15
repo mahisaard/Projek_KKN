@@ -216,7 +216,7 @@ bootstrap.min.css:5
 	width: 100%;
   	padding-top: 35vh;
   	text-align: center;
-  	background-image: url(../img/banner_bg.jpg);
+  	background-image: url(../img/tembakau-bg.jpg);
   	vertical-align: middle;
 }
 
@@ -253,7 +253,7 @@ bootstrap.min.css:5
 }
 
 #services {
-	background-image: url(../img/blog-bg.jpg);
+	background-image: url(../img/tembakau-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -293,7 +293,7 @@ bootstrap.min.css:5
 
 #about {
 	padding: 90px 0px 90px 0px;
-	background-image: url(../img/about-bg.jpg);
+	background-image: url(../img/tembakau-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -463,7 +463,7 @@ bootstrap.min.css:5
 
 
 #blog {
-	background-image: url(../img/blog-bg.jpg);
+	background-image: url(../img/tembakau-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
