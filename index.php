@@ -156,7 +156,6 @@ http://www.templatemo.com/tm-506-tinker
                             </div>                         
                             <h4>$showservices[title_services]</h4>
                             <div class=\"line-dec\"></div>
-                            <p>$showservices[description_services]</p>
                             <p>$showservices[detail_services].</p>";
 
                 ?>
