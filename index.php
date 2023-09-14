@@ -48,7 +48,32 @@ if (isset($_POST['submitemail'])) {
 <html>
 
 <head>
+    <style>
+            .text-content {
+                font-size: 24px;
+                display: inline-block;
+                padding: 20px;
+                /* Atur sesuai kebutuhan Anda */
+            }
 
+            /* Contoh styling warna huruf, outline, dan shadow */
+            .text-content span {
+                display: inline-block;
+                color: rgb(0, 128, 255);
+                text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+                /* Efek shadow */
+                -webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
+                /* Outline */
+                text-stroke: 1px rgba(0, 0, 0, 0.3);
+                /* Outline */
+                font-weight: bold;
+                /* Memberikan ketebalan pada outline */
+            }
+
+            .text-content span:nth-child(2) {
+                color: rgb(255, 0, 0);
+          }
+        </style>
     <!--
 Tinker Template
 http://www.templatemo.com/tm-506-tinker
@@ -126,7 +151,7 @@ http://www.templatemo.com/tm-506-tinker
     <!-- // WELCOME SCREEN \\ -->
     <div class="parallax-content baner-content" id="home">
         <div class="container">
-            <div class="text-content">
+            <div class="text-content"><span>
                 <?php
                 foreach ($mysqli->get_show_profile() as $showprofile) {
                     echo "
@@ -137,7 +162,7 @@ http://www.templatemo.com/tm-506-tinker
                 <div class="primary-white-button">
                     <a href="#" class="scroll-link" data-id="about"><?= moredetail ?></a>
                 </div>
-            </div>
+           </span></div>
         </div>
     </div>
 
@@ -202,7 +227,7 @@ http://www.templatemo.com/tm-506-tinker
                                     <?php
                                     foreach ($mysqli->get_show_gallery_detail() as $showgallerydetail) {
                                         echo "
-                                    <div class=\"col-sm-3 col-sm-12 project-item mix $showgallerydetail[category_gallery]\">
+                                    <div class=\"col-sm-3 col-sm-20 project-item mix $showgallerydetail[category_gallery]\">
                                     <div class=\"thumb\">
                                             <div class=\"image\">
                                                 <a href=\"img/$showgallerydetail[pict_gallery]\" data-lightbox=\"image-1\"><img src=\"img/$showgallerydetail[pict_gallery]\"></a>

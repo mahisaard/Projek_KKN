@@ -195,30 +195,22 @@ if ($module == "edit"){
                           <div class=\"radio col-sm-10\">
                               <label>";
                               ?>
-                              <?php
-                              $language_contactus = @$showcontactus[lang_contactus];
-                              if ($language_contactus == "en"){
-                                echo"
-                                <input type=\"radio\" name=\"lang_contactus\" id=\"optionsRadios2\" value=\"en\" checked>
-                                English
-                              </label>
+                                <?php
+                                $language_contactus = isset($showcontactus['language_contactus']) ? $showcontactus['language_contactus'] : ''; // Menggunakan isset() untuk menghindari notice jika tidak ada data
+                                $selected_en = ($language_contactus == "en") ? "checked" : "";
+                                $selected_in = ($language_contactus == "in") ? "checked" : "";
+                                ?>
+
+                                <label>
+                                    <input type="radio" name="lang_contactus" id="optionsRadios2" value="en" <?= $selected_en ?>>
+                                    English
+                                </label>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                              <label>
-                                <input type=\"radio\" name=\"lang_contactus\" id=\"optionsRadios1\" value=\"in\">
-                                Indonesia
-                              </label>";
-                              }else{
-                                echo"
-                                <input type=\"radio\" name=\"lang_contactus\" id=\"optionsRadios2\" value=\"en\">
-                                English
-                              </label>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                              <label>
-                                <input type=\"radio\" name=\"lang_contactus\" id=\"optionsRadios1\" value=\"in\" checked>
-                                Indonesia
-                              </label>";
-                              }
-                              ?>
+                                <label>
+                                    <input type="radio" name="lang_contactus" id="optionsRadios1" value="in" <?= $selected_in ?>>
+                                    Indonesia
+                                </label>
+
                               <?php
                               echo"
                           </div>

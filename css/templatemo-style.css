@@ -22,7 +22,7 @@ ul {
 }
 
 p {
-	color: #7a7a7a;
+	color: #373737;
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -216,7 +216,7 @@ bootstrap.min.css:5
 	width: 100%;
   	padding-top: 35vh;
   	text-align: center;
-  	background-image: url(../img/tembakau-bg.jpg);
+  	background-image: url(../img/wallpaper.png);
   	vertical-align: middle;
 }
 
@@ -242,7 +242,7 @@ bootstrap.min.css:5
 }
 
 .baner-content .text-content p {
-	color: #fff;
+	color: #fbfbfb;
 	font-size: 14px;
 	line-height: 24px;
 	padding: 0px 25%;
